@@ -1,0 +1,435 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+#header {
+    background-color: #045b80;
+    color: rgb(245, 247, 250);
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+#header nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#header nav ul li {
+    margin: 0 20px;
+}
+
+#header nav ul li a {
+    font-size: 1em;
+    font-weight: 500;
+    color: #f4f4f4;
+    padding: 8px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+#header nav ul li a:hover {
+    background-color: #0c92eb;
+}
+
+/* Intro Section */
+#intro {
+    background: url('images/myintro.avif') no-repeat center center/cover;
+    color: rgb(7, 61, 255);
+    text-align: center;
+    padding: 140px 20px 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#one {
+    background: url('images/intro1') no-repeat center center/cover;
+}
+#two {
+    background: url('images/whatido.avif') no-repeat center center/cover;
+}
+#intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#intro .button {
+    font-size: 1em;
+    padding: 12px 25px;
+    background-color: #023285;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#intro .button:hover {
+    background-color: #b1c3d6;
+}
+
+/* Section Styles */
+.main {
+    padding: 80px 20px;
+}
+
+.style1 {
+    background-color: #fff;
+    color: #000000;
+}
+
+.style2 {
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+.style3 {
+    background-color: #ececec;
+    color: #333;
+}
+
+.main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.main p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Buttons */
+.button {
+    font-size: 1em;
+    padding: 12px 25px;
+    background-color: #02346a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.button:hover {
+    background-color: #c1cedc;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery article {
+    width: calc(33.333% - 30px);
+    margin-bottom: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+#footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#footer ul li {
+    margin: 0 10px;
+}
+
+#footer ul li a {
+    font-size: 1.5em;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+#footer ul li a:hover {
+    color: #0056b3;
+}
+
+#footer pre {
+    font-size: 1em;
+    color: #bbb;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #header nav ul {
+        flex-direction: column;
+    }
+
+    .gallery article {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery article {
+        width: 100%;
+    }
+
+    #intro h2 {
+        font-size: 2em;
+    }
+
+    #intro p {
+        font-size: 1em;
+    }
+}
+/* Section Styling */
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Centered Button */
+.button-centered {
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 12px 25px;
+    background-color: #000001;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-centered:hover {
+    background-color: #e3eaf2;
+}
+/* Footer */
+#footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+#footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#footer ul li {
+    margin: 0 15px;
+}
+
+#footer ul li a {
+    font-size: 1.5em;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+#footer ul li a:hover {
+    color: #0056b3;
+}
+
+#footer pre {
+    font-size: 1em;
+    color: #bbb;
+    margin: 0;
+    line-height: 1.5;
+}
+/* Centering the content in the certifications section */
+#certificates .content {
+    text-align: center;
+}
+
+#certificates .certifications-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Gallery Container */
+#work .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust space between images */
+    justify-content: center;
+}
+
+/* Individual Image Container */
+#work .gallery article {
+    flex: 1 1 calc(25% - 20px); /* Adjust width as needed */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Images */
+#work .gallery img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Crop and fit image */
+    max-width: 300px; /* Fixed maximum width */
+}
+/* Certifications Section */
+#certificates {
+    padding: 60px 20px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+#certificates h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #02346a;
+}
+
+#certificates p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Gallery Container for Certifications */
+#certificates .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual Certification Image Container */
+#certificates .gallery article {
+    flex: 1 1 calc(33.333% - 30px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    height: 100%; /* Ensures full height of container */
+}
+
+/* Certification Images */
+#certificates .gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: auto; /* Pushes the text down */
+}
+
+/* Certification Titles */
+#certificates .gallery article h3 {
+    font-size: 1.3em;
+    color: #02346a;
+    margin-bottom: 10px;
+    font-weight: 600;
+    align-self: flex-start; /* Align text to the bottom */
+}
+
+/* Certification Descriptions */
+#certificates .gallery article p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 0;
+    align-self: flex-start; /* Align text to the bottom */
+}
+
+/* Hover Effect on Certification Boxes */
+#certificates .gallery article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #certificates .gallery article {
+        flex: 1 1 calc(50% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    #certificates .gallery article {
+        flex: 1 1 100%;
+    }
+
+    #certificates h2 {
+        font-size: 2em;
+    }
+
+    #certificates p {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
