@@ -60,7 +60,7 @@ ul {
 
 /* Intro Section */
 #intro {
-    background: url('images/myintro.avif') no-repeat center center/cover;
+    background: url('myintro.avif') no-repeat center center/cover;
     color: rgb(7, 61, 255);
     text-align: center;
     padding: 140px 20px 80px 20px;
@@ -70,10 +70,10 @@ ul {
     flex-direction: column;
 }
 #one {
-    background: url('images/intro1') no-repeat center center/cover;
+    background: url('intro1') no-repeat center center/cover;
 }
 #two {
-    background: url('images/whatido.avif') no-repeat center center/cover;
+    background: url('whatido.avif') no-repeat center center/cover;
 }
 #intro h2 {
     font-size: 2.5em;
